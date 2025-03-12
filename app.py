@@ -19,4 +19,5 @@ def get_inventory():
     return jsonify([dict(row) for row in artworks])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000, debug=True)
+
